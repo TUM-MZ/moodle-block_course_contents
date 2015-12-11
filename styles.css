@@ -1,11 +1,18 @@
 .block_course_contents .section-list {
     margin: 0px;
-    padding-left: 20px;
 }
 
 .block_course_contents .section-item {
-    list-style-image: url([[pix:b]]);
+    list-style-type: none;
+    background-image:url([[pix:block_course_contents|square]]);
+    background-repeat:no-repeat;
+    background-position: -1px 2px;
+    padding-left: 17px;
     margin-bottom: 6pt;
+}
+
+.block_course_contents .section-item:last-child {
+    margin-bottom: 0pt;
 }
 
 .block_course_contents .section-title:before {
@@ -25,15 +32,34 @@
 }
 
 .block_course_contents .section-number {
+    display: none;
 }
 
 .block_course_contents .section-title {
+    font-size: 13px;
+    text-transform: none;
+    font-weight: normal;
+    background-color: transparent;
+    padding: 0px;
+    white-space: normal;
 }
 
-.block_course_contents a.dimmed:link,
-.block_course_contents a.dimmed:visited {
-    color:#AAAAAA;
+.block_course_contents .section-title:hover,
+.block_course_contents a.dimmed:hover .section-title {
+    color: #002143 !important;
+}
+
+.block_course_contents a.dimmed:link .section-title,
+.block_course_contents a.dimmed:visited .section-title{
+    color: #AAAAAA;
 }
 
 .block_course_contents {
+}
+
+.block_course_contents .header h2:before {
+    content: "\f03a";
+    font-family: "FontAwesome";
+    padding-right: 10px;
+    font-weight: normal;
 }
